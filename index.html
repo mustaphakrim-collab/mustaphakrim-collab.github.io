@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pr Mustapha KRIM | Espace pédagogique</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263445;
+}
+
+header {
+    background: linear-gradient(120deg, #102a43, #176b87);
+    color: white;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+header h1 { font-size: 36px; margin-bottom: 12px; }
+header p { font-size: 17px; }
+
+nav {
+    background: #ffffff;
+    padding: 17px;
+    text-align: center;
+    box-shadow: 0 2px 8px #0001;
+}
+
+nav a {
+    color: #176b87;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 { color: #176b87; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0001;
+}
+
+.card h3 { color: #176b87; }
+
+.card a {
+    color: #176b87;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+@media (max-width: 600px) {
+    header h1 { font-size: 27px; }
+    nav a { display: inline-block; margin: 7px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pr Mustapha KRIM</h1>
+    <p>Espace pédagogique et scientifique</p>
+    <p>Physique médicale | Simulation | Intelligence artificielle en santé</p>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#cours">Cours</a>
+    <a href="#tp">Travaux pratiques</a>
+    <a href="#recherche">Recherche</a>
+</nav>
+
+<main>
+
+<section id="accueil">
+    <h2>Bienvenue</h2>
+    <p>
+      Bienvenue sur mon espace pédagogique.
+      Vous trouverez ici les supports de cours,
+      séries d'exercices, travaux pratiques,
+      codes sources et ressources scientifiques.
+    </p>
+</section>
+
+<section id="cours">
+    <h2>Enseignements et cours</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Programmation scientifique</h3>
+            <p>C++, Python, POO et méthodes numériques.</p>
+            <a href="cours/programmation.html">Consulter les cours →</a>
+        </div>
+
+        <div class="card">
+            <h3>Physique médicale</h3>
+            <p>Radiothérapie, médecine nucléaire et radioprotection.</p>
+            <a href="cours/physique-medicale.html">Consulter les cours →</a>
+        </div>
+
+        <div class="card">
+            <h3>Simulation Monte Carlo</h3>
+            <p>Geant4, GATE, TOPAS et applications médicales.</p>
+            <a href="cours/monte-carlo.html">Consulter les cours →</a>
+        </div>
+
+        <div class="card">
+            <h3>Intelligence artificielle en santé</h3>
+            <p>Machine Learning et Deep Learning.</p>
+            <a href="cours/ia-sante.html">Consulter les cours →</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="tp">
+    <h2>Séries et travaux pratiques</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Programmation C++</h3>
+            <p>POO, pointeurs, mémoire et cybersécurité.</p>
+            <a href="tp/TP5_Cybersecurite.pdf">Télécharger le TP</a>
+        </div>
+        <div class="card">
+            <h3>Simulation numérique</h3>
+            <p>Exercices et applications Monte Carlo.</p>
+            <a href="tp/serie-monte-carlo.pdf">Télécharger la série</a>
+        </div>
+    </div>
+</section>
+
+<section id="recherche">
+    <h2>Recherche scientifique</h2>
+    <p>
+      Travaux de recherche en physique médicale,
+      dosimétrie, simulation Monte Carlo et IA en santé.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>Pr Mustapha KRIM</p>
+    <p>Université Hassan Premier – Settat, Maroc</p>
+    <p>Institut Supérieur des Sciences de la Santé</p>
+</footer>
+
+</body>
+</html>
